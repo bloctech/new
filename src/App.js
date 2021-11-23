@@ -1,19 +1,17 @@
-<<<<<<< HEAD
 import React from "react";
-=======
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./components/Header";
+import Community from "./components/Community";
 import About from "./components/About";
->>>>>>> 5cf38710213c52c8f3b837ab43c1449b9a54e588
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-<<<<<<< HEAD
       <Header />
-=======
-      <About />
->>>>>>> 5cf38710213c52c8f3b837ab43c1449b9a54e588
+      <Routes>
+        <Route exact path="/community" component={Community} />
+        <Route exact path="/" component={About} />
+      </Routes>
     </>
   );
 }
