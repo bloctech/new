@@ -9,8 +9,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/community" component={Community} />
-        <Route exact path="/" component={About} />
+        <Route path="/community" element={<Community />} />
+
+        <Route exact path="/" element={<About />} />
       </Routes>
     </>
   );
