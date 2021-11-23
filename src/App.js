@@ -1,17 +1,12 @@
-import logo from "./logo.svg";
+
+import React from "react";
 import "./App.css";
 import About from "./components/About";
-import { ThemeProvider } from "@material-ui/styles";
-import { CssBaseline } from "@material-ui/core";
-import theme from "./theme";
-
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+        <Header />
         <About />
-      </ThemeProvider>
     </>
   );
 }
