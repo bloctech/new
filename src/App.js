@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import Community from "./components/Community";
@@ -12,6 +13,7 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route exact path="/" element={<About />} />
       </Routes>
+      <About />
     </>
   );
 }
