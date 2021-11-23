@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Container, Grid } from "@material-ui/core";
+import { Box, Container, Grid, useMediaQuery } from "@material-ui/core";
 import bg from "../images/community-bg.png";
 
 function Community() {
+  const matches = useMediaQuery("(max-width:960px)");
   return (
     <Box mt={10}>
       <Container maxWidth="lg">
@@ -35,9 +36,23 @@ function Community() {
           <Grid item xs={11} sm={11} md={6}>
             <Box>
               <Box color="#48007C">Lets Join Our Network Community</Box>
+              <Box fontSize="20px">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.{" "}
+              </Box>
             </Box>
           </Grid>
-          <Grid item xs={11} sm={11} md={6}></Grid>
+          <Grid item xs={11} sm={11} md={6}>
+            <Box
+              borderRadius="28px"
+              height={matches ? "auto" : "461px"}
+              style={{
+                background: "linear-gradient(180deg, #48007C 0%, #6100BF 100%)",
+              }}
+            ></Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>
