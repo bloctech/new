@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
-import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 import { Box, Container } from "@material-ui/core";
 import homeHeroBg from "../images/home_hero_bg.png";
 
