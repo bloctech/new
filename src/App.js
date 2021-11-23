@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/community" element={<Community />} />
-
         <Route exact path="/" element={<About />} />
       </Routes>
     </>
