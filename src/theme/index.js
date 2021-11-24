@@ -22,6 +22,7 @@ theme.overrides = {
   MuiCssBaseline: {
     "@global": {
       body: {
+        fontFamily: "Lato",
         backgroundColor: "#ffffff",
         color: "#000000",
       },
