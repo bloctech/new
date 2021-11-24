@@ -12,12 +12,13 @@ import {
   ListItemText,
 } from "@material-ui/core";
 // import soliditylogo from "../images/solidity audit.svg";
-import { Link as LinkR } from "react-router-dom";
+import { Link as LinkR, NavLink } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 // import { useWeb3React } from "@web3-react/core";
 // import { defaultAddress } from "../utils";
+import Routes from "../Routes";
 
 const useStyles = makeStyles({
   list: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   paper: {
-    background: "#1c1c34",
+    background: "#fff",
     justifyContent: "center",
   },
   hover: {
@@ -45,7 +46,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Header() {
+function Header(props) {
   //   const { account, active, activate, deactivate } = useWeb3React();
   const classes = useStyles();
   const [state, setState] = React.useState({
@@ -59,7 +60,9 @@ function Header() {
   const handleToggle = () => {
     setOpenMenu((prevOpen) => !prevOpen);
   };
-
+  const activeRoute = (routeName) => {
+    return props.history === routeName ? true : false;
+  };
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
@@ -94,24 +97,75 @@ function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["about", "build", "roadmap", "Community"].map((text, index) => (
-          <ListItem
-            button
+        {Routes.map((prop, key) => (
+          <NavLink
+            to={prop.path}
+            key={key}
             style={{
-              justifyContent: "center",
-              borderBottom: "1px solid #bbb8b8",
+              textDecoration: "none",
+              color: "#48007C",
+              fontStyle: "normal",
             }}
-            key={text}
           >
-            <LinkR to="/${text}">
+            <ListItem
+              selected={activeRoute(prop.path)}
+              button
+              style={{ borderBottom: "1px solid #eee" }}
+              key={prop.sidebarName}
+            >
               <ListItemText
-                style={{ textTransform: "capitalize", textAlign: "center" }}
-                primary={text}
+                style={{ textAlign: "center" }}
+                primary={prop.sidebarName}
               />
-            </LinkR>
-          </ListItem>
+            </ListItem>
+          </NavLink>
         ))}
       </List>
+      {/* <List>
+        {["about", "build", "roadmap", "Community"].map((text, index) => {
+          if (text === "about") {
+            <ListItem
+              button
+              style={{
+                justifyContent: "center",
+                borderBottom: "1px solid #bbb8b8",
+              }}
+              key={text}
+            >
+              <LinkR to="/" className={classes.hover}>
+                <ListItemText
+                  style={{
+                    textTransform: "capitalize",
+                    textAlign: "center",
+                    color: "#48007C",
+                  }}
+                  primary={text}
+                />
+              </LinkR>
+            </ListItem>;
+          } else {
+            <ListItem
+              button
+              style={{
+                justifyContent: "center",
+                borderBottom: "1px solid #bbb8b8",
+              }}
+              key={text}
+            >
+              <LinkR to={text} className={classes.hover}>
+                <ListItemText
+                  style={{
+                    textTransform: "capitalize",
+                    textAlign: "center",
+                    color: "#48007C",
+                  }}
+                  primary={text}
+                />
+              </LinkR>
+            </ListItem>;
+          }
+        })}
+      </List> */}
     </div>
   );
 
@@ -216,7 +270,7 @@ function Header() {
                         style={{
                           fontSize: "38px",
                           cursor: "pointer",
-                          color: "#fff",
+                          color: "#48007C",
                         }}
                       ></MenuIcon>
                     </Button>
