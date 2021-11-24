@@ -210,48 +210,84 @@ function About() {
                 >
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg1} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg1}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
 
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg2} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg2}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg3} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg3}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg4} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg4}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg5} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg5}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg6} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg6}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg7} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg7}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg8} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg8}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <Box align="center">
-                      <img src={partnerImg9} alt="" />
+                      <img
+                        height={matches ? "120px" : "auto"}
+                        src={partnerImg9}
+                        alt=""
+                      />
                     </Box>
                   </Grid>
                 </Grid>
@@ -299,7 +335,7 @@ function About() {
             <Grid style={{ marginTop: "90px" }} container>
               <Grid item xs={12} sm={4}>
                 <Box
-                  fontSize="50px"
+                  fontSize={matches ? "25px" : "45px"}
                   fontWeight="700"
                   fontFamily="Lato"
                   color={theme.palette.secondary.contrastText}
@@ -309,7 +345,7 @@ function About() {
                 <Box
                   mb={matches ? 5 : 0}
                   mt={3}
-                  fontSize="24px"
+                  fontSize={matches ? "16px" : "22px"}
                   fontWeight="400"
                 >
                   Lorem Ipsum is simply dummy text of the printing and
@@ -327,24 +363,23 @@ function About() {
                       alignItems="center"
                       flexDirection="column"
                       p={3}
-                      style={{
-                        backgroundImage: `url(${packegeBg})`,
-                        backgroundColor: " #cccccc09",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
+                      borderTop="10px solid #AD00FF"
+                      boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                     >
                       <Box
                         mt={1}
-                        fontSize="24px"
+                        fontSize={matches ? "19px" : "24px"}
                         fontWeight="700"
                         fontFamily="Lato"
                         color={theme.palette.secondary.contrastText}
                       >
                         DeFi, NFT & Payments
                       </Box>
-                      <Box mt={2} fontSize="18px" fontWeight="400">
+                      <Box
+                        mt={2}
+                        fontSize={matches ? "15px" : "18px"}
+                        fontWeight="400"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -356,10 +391,10 @@ function About() {
                         borderRadius="35px"
                         px={3}
                         py={1}
-                        width="120px"
+                        width={matches ? "130px" : "150px"}
+                        fontSize={matches ? "16px" : "20px"}
                         textAlign="center"
                         fontWeight="700"
-                        fontSize="20px"
                         fontFamily="Lato"
                         color={theme.palette.primary.contrastText}
                         mt={2}
@@ -368,7 +403,7 @@ function About() {
                             "radial-gradient(133.33% 1564.91% at 14.8% 49.12%, #6300C6 0%, #AD00FF 100%)",
                         }}
                       >
-                        Build
+                        Build Now
                       </Box>
                     </Box>
                   </Grid>
@@ -378,24 +413,23 @@ function About() {
                       alignItems="center"
                       flexDirection="column"
                       p={3}
-                      style={{
-                        backgroundImage: `url(${packegeBg})`,
-                        backgroundColor: " #cccccc09",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
+                      borderTop="10px solid #AD00FF"
+                      boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                     >
                       <Box
                         mt={1}
-                        fontSize="24px"
+                        fontSize={matches ? "19px" : "24px"}
                         fontWeight="700"
                         fontFamily="Lato"
                         color={theme.palette.secondary.contrastText}
                       >
                         DeFi, NFT & Payments
                       </Box>
-                      <Box mt={2} fontSize="18px" fontWeight="400">
+                      <Box
+                        mt={2}
+                        fontSize={matches ? "15px" : "18px"}
+                        fontWeight="400"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -407,10 +441,10 @@ function About() {
                         borderRadius="35px"
                         px={3}
                         py={1}
-                        width="120px"
+                        width={matches ? "130px" : "150px"}
+                        fontSize={matches ? "16px" : "20px"}
                         textAlign="center"
                         fontWeight="700"
-                        fontSize="20px"
                         fontFamily="Lato"
                         color={theme.palette.primary.contrastText}
                         mt={2}
@@ -419,7 +453,7 @@ function About() {
                             "radial-gradient(133.33% 1564.91% at 14.8% 49.12%, #6300C6 0%, #AD00FF 100%)",
                         }}
                       >
-                        Build
+                        Build Now
                       </Box>
                     </Box>
                   </Grid>
@@ -429,24 +463,23 @@ function About() {
                       alignItems="center"
                       flexDirection="column"
                       p={3}
-                      style={{
-                        backgroundImage: `url(${packegeBg})`,
-                        backgroundColor: " #cccccc09",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
+                      borderTop="10px solid #AD00FF"
+                      boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                     >
                       <Box
                         mt={1}
-                        fontSize="24px"
+                        fontSize={matches ? "19px" : "24px"}
                         fontWeight="700"
                         fontFamily="Lato"
                         color={theme.palette.secondary.contrastText}
                       >
                         DeFi, NFT & Payments
                       </Box>
-                      <Box mt={2} fontSize="18px" fontWeight="400">
+                      <Box
+                        mt={2}
+                        fontSize={matches ? "15px" : "18px"}
+                        fontWeight="400"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -458,10 +491,10 @@ function About() {
                         borderRadius="35px"
                         px={3}
                         py={1}
-                        width="120px"
+                        width={matches ? "130px" : "150px"}
+                        fontSize={matches ? "16px" : "20px"}
                         textAlign="center"
                         fontWeight="700"
-                        fontSize="20px"
                         fontFamily="Lato"
                         color={theme.palette.primary.contrastText}
                         mt={2}
@@ -470,7 +503,7 @@ function About() {
                             "radial-gradient(133.33% 1564.91% at 14.8% 49.12%, #6300C6 0%, #AD00FF 100%)",
                         }}
                       >
-                        Build
+                        Build Now
                       </Box>
                     </Box>
                   </Grid>
@@ -480,24 +513,23 @@ function About() {
                       alignItems="center"
                       flexDirection="column"
                       p={3}
-                      style={{
-                        backgroundImage: `url(${packegeBg})`,
-                        backgroundColor: " #cccccc09",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
+                      borderTop="10px solid #AD00FF"
+                      boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                     >
                       <Box
                         mt={1}
-                        fontSize="24px"
+                        fontSize={matches ? "19px" : "24px"}
                         fontWeight="700"
                         fontFamily="Lato"
                         color={theme.palette.secondary.contrastText}
                       >
                         DeFi, NFT & Payments
                       </Box>
-                      <Box mt={2} fontSize="18px" fontWeight="400">
+                      <Box
+                        mt={2}
+                        fontSize={matches ? "15px" : "18px"}
+                        fontWeight="400"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -509,10 +541,10 @@ function About() {
                         borderRadius="35px"
                         px={3}
                         py={1}
-                        width="120px"
+                        width={matches ? "130px" : "150px"}
+                        fontSize={matches ? "16px" : "20px"}
                         textAlign="center"
                         fontWeight="700"
-                        fontSize="20px"
                         fontFamily="Lato"
                         color={theme.palette.primary.contrastText}
                         mt={2}
@@ -521,7 +553,7 @@ function About() {
                             "radial-gradient(133.33% 1564.91% at 14.8% 49.12%, #6300C6 0%, #AD00FF 100%)",
                         }}
                       >
-                        Build
+                        Build Now
                       </Box>
                     </Box>
                   </Grid>
@@ -532,8 +564,8 @@ function About() {
         </Container>
         <Box
           mt={10}
-          pb={20}
-          pt={30}
+          pb={matches ? 10 : 20}
+          pt={matches ? 15 : 30}
           px={matches ? 3 : 20}
           style={{
             backgroundImage: `url(${comunityBg})`,
@@ -544,7 +576,7 @@ function About() {
           }}
         >
           <Box
-            fontSize="50px"
+            fontSize={matches ? "25px" : "50px"}
             fontWeight="700"
             fontFamily="Lato"
             color={theme.palette.primary.contrastText}
@@ -553,7 +585,7 @@ function About() {
           </Box>
           <Box
             mt={2}
-            fontSize="24px"
+            fontSize={matches ? "18px" : "24px"}
             fontWeight="400"
             fontFamily="Lato"
             color={theme.palette.primary.contrastText}
@@ -568,10 +600,10 @@ function About() {
             borderRadius="35px"
             px={3}
             py={1}
-            width="120px"
+            width={matches ? "130px" : "150px"}
+            fontSize={matches ? "16px" : "20px"}
             textAlign="center"
             fontWeight="700"
-            fontSize="20px"
             fontFamily="Lato"
             color={theme.palette.primary.contrastText}
             mt={2}
