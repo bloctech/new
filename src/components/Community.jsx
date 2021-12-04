@@ -6,6 +6,7 @@ import {
   useMediaQuery,
   Button,
   CardMedia,
+  useTheme,
 } from "@material-ui/core";
 import bg from "../images/community-bg.png";
 import { BsTelegram, BsYoutube, BsFacebook, BsReddit } from "react-icons/bs";
@@ -14,6 +15,19 @@ import { RiSubtractLine } from "react-icons/ri";
 import linkedin from "../images/linkedin.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Skateboarding from "../videos/Skateboarding.mp4";
+import linkedIn from "../images/linkedin_f.png";
+import telegram from "../images/telegram.png";
+import facebook from "../images/facebook.png";
+import twitter from "../images/twitter.png";
+import partnerImg1 from "../images/partner_img1.png";
+import partnerImg2 from "../images/partner_img2.png";
+import partnerImg3 from "../images/partner_img3.png";
+import partnerImg4 from "../images/partner_img4.png";
+import partnerImg5 from "../images/partner_img5.png";
+import partnerImg6 from "../images/partner_img6.png";
+import partnerImg7 from "../images/partner_img7.png";
+import partnerImg8 from "../images/partner_img8.png";
+import partnerImg9 from "../images/partner_img9.png";
 
 const useStyles = makeStyles({
   hover: {
@@ -40,6 +54,7 @@ const useStyles = makeStyles({
   },
 });
 function Community() {
+  const theme = useTheme();
   const classes = useStyles();
   const matches = useMediaQuery("(max-width:960px)");
   const matches1 = useMediaQuery("(max-width:680px)");
@@ -57,23 +72,9 @@ function Community() {
     }
   };
   return (
-    <Box mt={10}>
+    <Box>
       <Container maxWidth="lg">
         <Box
-          position="absolute"
-          fontSize={matches1 ? "55px" : "122px"}
-          fontFamily="700"
-          top={matches1 ? "20%" : "10%"}
-        >
-          <Box color="#6100BF" pl={2}>
-            People make
-          </Box>
-          <Box color="#fff" pl={2}>
-            it happen
-          </Box>
-        </Box>
-        <Box
-          mt={15}
           mb={15}
           style={{
             backgroundImage: `url(${bg})`,
@@ -84,8 +85,802 @@ function Community() {
             backgroundPosition: "center",
           }}
         ></Box>
+        <Box
+          mb={2}
+          mt={4}
+          fontWeight="700"
+          fontSize={matches ? "30px" : "50px"}
+          fontFamily="Lato"
+          color={theme.palette.secondary.contrastText}
+          textAlign="center"
+        >
+          OUR TEAM
+        </Box>
+        <Box
+          textAlign="center"
+          mt={1}
+          mb={5}
+          fontWeight="400"
+          fontSize={matches ? "14px" : "18px"}
+        >
+          Our team comprises an exceptional and diverse group of industry
+          experts and highly talented, creative, and passionate professionals;
+          with a background spanning; Engineering, Computer science,
+          Mathematics, Economics, Finance, management, philosophy, Arts, law,
+          and humanities.
+        </Box>
+        <Grid spacing={4} container>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: Charles Madu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-Founder & CEO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderRight="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+              <Box
+                justifyContent="center"
+                my={2}
+                display="flex"
+                alignItems="center"
+              >
+                <img
+                  style={{ marginLeft: "20px", marginRight: "20px" }}
+                  src={linkedIn}
+                  alt=""
+                />
+                <img style={{ marginRight: "20px" }} src={telegram} alt="" />
+                <img style={{ marginRight: "20px" }} src={facebook} alt="" />
+                <img style={{ marginRight: "20px" }} src={twitter} alt="" />
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+        <Box
+          mb={4}
+          mt={7}
+          fontWeight="700"
+          fontSize={matches ? "30px" : "50px"}
+          fontFamily="Lato"
+          color={theme.palette.secondary.contrastText}
+          textAlign="center"
+        >
+          Blockchain and Media Advisors
+        </Box>
+        <Grid spacing={4} container>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Box
+              boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              p={1}
+              height="100%"
+              borderLeft="5px solid #48007C"
+            >
+              <Box align="center" mt={1}>
+                <img width="90px" src="/images/person.png" alt="" />
+              </Box>
+              <Box
+                mt={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Name: James Chikelu
+              </Box>
+              <Box
+                mb={2}
+                fontWeight="700"
+                fontSize={matches ? "13px" : "16px"}
+                fontFamily="Lato"
+                color={theme.palette.secondary.contrastText}
+                textAlign="center"
+              >
+                Position: Co-founder & COO
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
 
-        <Grid container style={{ justifyContent: "space-around" }}>
+        <Box
+          mb={4}
+          mt={7}
+          fontWeight="700"
+          fontSize={matches ? "30px" : "50px"}
+          fontFamily="Lato"
+          color={theme.palette.secondary.contrastText}
+          textAlign="center"
+        >
+          KORAPLAY INVESTORS AND PARTNERS
+        </Box>
+        <Grid
+          container
+          style={{
+            background: " rgba(229, 229, 229, 0.5)",
+            padding: "20px",
+            borderRadius: "30px",
+            border: "1px solid #6300C6",
+          }}
+        >
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg1}
+                alt=""
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg2}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg3}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg4}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg5}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg6}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg7}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg8}
+                alt=""
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box align="center">
+              <img
+                height={matches ? "120px" : "auto"}
+                src={partnerImg9}
+                alt=""
+              />
+            </Box>
+          </Grid>
+        </Grid>
+        {/* <Grid container style={{ justifyContent: "space-around" }}>
           <Grid item xs={11} sm={11} md={5}>
             <Box>
               <Box
@@ -273,9 +1068,9 @@ function Community() {
               </Grid>
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
 
-        <Box mt={10} pt={5}>
+        {/* <Box mt={10} pt={5}>
           <Box
             fontSize={matches1 ? "50px" : "72px"}
             fontWeight="900"
@@ -523,9 +1318,9 @@ function Community() {
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
 
-        <Box mt={15} pt={5}>
+        {/* <Box mt={15} pt={5}>
           <Box
             fontSize={matches1 ? "50px" : "72px"}
             fontWeight="900"
@@ -611,9 +1406,9 @@ function Community() {
               />
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
 
-        <Box mt={15} mb={8} pt={5}>
+        {/* <Box mt={15} mb={8} pt={5}>
           <Box
             fontSize="48px"
             fontWeight="900"
@@ -773,6 +1568,43 @@ function Community() {
               </Box>
             </Box>
           </Box>
+        </Box> */}
+        <Box
+          mb={2}
+          mt={4}
+          fontWeight="700"
+          fontSize={matches ? "30px" : "50px"}
+          fontFamily="Lato"
+          color={theme.palette.secondary.contrastText}
+          textAlign="center"
+        >
+          CAREERS
+        </Box>
+        <Box
+          textAlign="center"
+          mt={1}
+          mb={5}
+          fontWeight="400"
+          fontSize={matches ? "14px" : "18px"}
+        >
+          Koraplay is a decentralized entertainment creation and streaming
+          service that connects content creators and content consumers directly.
+          Koraplay is built with exceptional care for all lovers of
+          entertainment and houses a plethora of streaming suites. Koraplay will
+          be completely decentralized and run by a vibrant, open-source
+          community of developers, content creators, and fans all around the
+          globe.
+          <br />
+          Our company is fully remote, and our team is distributed across
+          Africa, Asia, Europe, North America, South America, and others.
+        </Box>
+        <Box
+          fontSize={matches1 ? "25px" : "45px"}
+          fontWeight="700"
+          color="primary.main"
+          textAlign="center"
+        >
+          Join our team, we are hiring
         </Box>
       </Container>
     </Box>

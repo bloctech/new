@@ -14,9 +14,9 @@ function RoadMap() {
   const matches = useMediaQuery("(max-width:750px)");
   return (
     <>
-      <Box>
+      <Box id="roadmap">
         <Container maxWidth="lg">
-          <Box
+          {/* <Box
             style={{
               backgroundImage: `url(${roadMapHeroBg})`,
               backgroundColor: " #cccccc09",
@@ -25,776 +25,367 @@ function RoadMap() {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-          ></Box>
+          ></Box> */}
           <Box
-            mb={matches ? 5 : 15}
+            mb={2}
             mt={4}
-            fontWeight="900"
+            fontWeight="700"
             fontSize={matches ? "30px" : "50px"}
             fontFamily="Lato"
             color={theme.palette.secondary.contrastText}
             textAlign="center"
           >
-            Road Map
+            RoadMap
           </Box>
-          <Grid spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                January 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderLeft="4px solid #48007C"
-              >
-                {" "}
-                February 2021
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                March 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderLeft="4px solid #48007C"
-              >
-                {" "}
-                April 2021
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                May 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderLeft="4px solid #48007C"
-              >
-                {" "}
-                June 2021
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                July 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderLeft="4px solid #48007C"
-              >
-                {" "}
-                Auguest 2021
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                September 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderLeft="4px solid #48007C"
-              >
-                {" "}
-                October 2021
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
-            <Grid item xs={12} sm={3}>
-              <Box
-                height="95%"
-                mt={2}
-                fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
-                textAlign="center"
-                px={3}
-                pt={2}
-                pb={6}
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                borderRight="4px solid #48007C"
-              >
-                {" "}
-                November 2021
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={9}>
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-              <RoadMapAccordian />
-            </Grid>
-          </Grid>
           <Box
             mb={5}
-            mt={10}
+            mt={1}
             fontWeight="700"
-            fontSize={matches ? "25px" : "35px"}
+            fontSize={matches ? "13px" : "25px"}
             fontFamily="Lato"
             color={theme.palette.secondary.contrastText}
             textAlign="center"
           >
-            Upcoming milestones
+            The Koraplay project roadmap is a technical guideline of what is to
+            come. Our project is community driven, and we strive to achieve the
+            goals we have set at the earliest.
           </Box>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
+          <Grid spacing={2} container>
             <Grid item xs={12} sm={3}>
               <Box
                 height="100%"
                 fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
+                fontSize={matches ? "19px" : "24px"}
                 textAlign="center"
-                p={3}
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                 borderRight="4px solid #48007C"
               >
                 {" "}
-                DeFi & dApps
+                Q4 2021
               </Box>
             </Grid>
             <Grid item xs={12} sm={9}>
               <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                p={matches ? 1 : 3}
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  In Progress
-                </Box>
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Project concept development
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Talent sourcing and teambuilding
+                  </li>
+                  <li style={{ marginTop: "8px" }}>Whitepaper release V1.0</li>
+                  <li style={{ marginTop: "8px" }}>Website launch</li>
+                  <li style={{ marginTop: "8px" }}>
+                    Online community development and Project awareness creation
+                  </li>
+                </ul>
               </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  design phase
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  ongoing
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  partner identified
-                </Box>
-              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
             </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
             <Grid item xs={12} sm={3}>
               <Box
                 height="100%"
                 fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
+                fontSize={matches ? "19px" : "24px"}
                 textAlign="center"
-                p={3}
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                 borderRight="4px solid #48007C"
               >
                 {" "}
-                Infra
+                Q1 2022
               </Box>
             </Grid>
             <Grid item xs={12} sm={9}>
               <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                p={matches ? 1 : 3}
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  In Progress
-                </Box>
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Token smart contracts development
+                  </li>
+                  <li style={{ marginTop: "8px" }}>Smart contracts auditing</li>
+                  <li style={{ marginTop: "8px" }}>Private sale round 1.0</li>
+                  <li style={{ marginTop: "8px" }}>Private sale round 2.0</li>
+                  <li style={{ marginTop: "8px" }}>Listing on CoinMarketCap</li>
+                  <li style={{ marginTop: "8px" }}>Listing on CoinGecko</li>
+                  <li style={{ marginTop: "8px" }}>IDO Sales</li>
+                  <li style={{ marginTop: "8px" }}>
+                    Testnet launch and deployment
+                  </li>
+                  <li style={{ marginTop: "8px" }}>Contracts auditing</li>
+                  <li style={{ marginTop: "8px" }}>
+                    Mainnet deployment and launch of token on Binance Smart
+                    Chain, Ethereum, and Polygon, Solona.
+                  </li>
+                </ul>
               </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  design phase
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  ongoing
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  partner identified
-                </Box>
-              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
             </Grid>
-          </Grid>
-          <Grid style={{ marginTop: "20px" }} spacing={2} container>
             <Grid item xs={12} sm={3}>
               <Box
                 height="100%"
                 fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
+                fontSize={matches ? "19px" : "24px"}
                 textAlign="center"
-                p={3}
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                 borderRight="4px solid #48007C"
               >
                 {" "}
-                Marketing
+                Q2 2022
               </Box>
             </Grid>
             <Grid item xs={12} sm={9}>
               <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                p={matches ? 1 : 3}
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  In Progress
-                </Box>
+                <ul>
+                  <li style={{ marginTop: "8px" }}>Koraplay MVP release.</li>
+                  <li style={{ marginTop: "8px" }}>
+                    DEX integrations (Uniswap, Pancakeswaps, etc.)
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    CEX startup sale (IEO & TGE)
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    DEX and CEX listening and public sale{" "}
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Secure Strategic partnerships
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Improve existing social media infrastructure and marketing
+                    strategy.
+                  </li>
+                </ul>
               </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  design phase
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  ongoing
-                </Box>
-              </Box>
-              <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
-              >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  partner identified
-                </Box>
-              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
             </Grid>
-          </Grid>
-          <Grid
-            style={{ marginTop: "20px", marginBottom: "50px" }}
-            spacing={2}
-            container
-          >
             <Grid item xs={12} sm={3}>
               <Box
                 height="100%"
                 fontWeight="700"
-                fontSize={matches ? "20px" : "24px"}
+                fontSize={matches ? "19px" : "24px"}
                 textAlign="center"
-                p={3}
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
                 borderRight="4px solid #48007C"
               >
                 {" "}
-                Wallet
+                Q3 2022
               </Box>
             </Grid>
             <Grid item xs={12} sm={9}>
               <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                p={matches ? 1 : 3}
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  In Progress
-                </Box>
+                <ul>
+                  <li style={{ marginTop: "8px" }}>Launch $KORAPLAY staking</li>
+                  <li style={{ marginTop: "8px" }}>
+                    Koraplay Beta Testing & release
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Peer review and bug bounty program
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Contracts Audits and security checks
+                  </li>
+                  <li style={{ marginTop: "8px" }}>Koraplay bridge</li>
+                  <li style={{ marginTop: "8px" }}>
+                    “Sister token” token launch and deployment
+                  </li>
+                </ul>
               </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
               <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                height="100%"
+                fontWeight="700"
+                fontSize={matches ? "19px" : "24px"}
+                textAlign="center"
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                borderRight="4px solid #48007C"
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  design phase
-                </Box>
+                {" "}
+                Q4 2022
               </Box>
+            </Grid>
+            <Grid item xs={12} sm={9}>
               <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                p={matches ? 1 : 3}
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Publishing new token economics document
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  ongoing
-                </Box>
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Koraplay platform official launch
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    In-platform (“sister”) token public sale or TGE.
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Strategies performance tuning
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Launch liquidity mining program to bootstrap use of Koraplay
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Implement Governance contracts for on-chain governance
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Create frontend surface on app for on-chain governance
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Revamp backend and frontend to handle the increasing number
+                    of nodes and users.
+                  </li>
+                </ul>
               </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
               <Box
-                mt={2}
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                height="100%"
+                fontWeight="700"
+                fontSize={matches ? "19px" : "24px"}
+                textAlign="center"
+                px={3}
+                py={3}
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
-                p={2}
+                borderRight="4px solid #48007C"
               >
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                >
-                  {" "}
-                  Launching Kadenaswap “Bountyswap” on mainnet
-                </Box>
-                <Box
-                  fontWeight="700"
-                  fontFamily="Lato"
-                  fontSize={matches ? "14px" : "20px"}
-                  color={theme.palette.secondary.light}
-                >
-                  {" "}
-                  partner identified
-                </Box>
+                {" "}
+                Q5 2022
               </Box>
+            </Grid>
+            <Grid item xs={12} sm={9}>
+              <Box
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
+                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
+                p={matches ? 1 : 3}
+              >
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Partnerships and marketing
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Integrate multichain functionalities and capabilities.
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Upgrade Koraplay to include more features for individuals,
+                    creators.
+                  </li>
+                </ul>
+              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Box
+                height="100%"
+                fontWeight="700"
+                fontSize={matches ? "19px" : "24px"}
+                textAlign="center"
+                px={3}
+                py={3}
+                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
+                borderRight="4px solid #48007C"
+              >
+                {" "}
+                Q1 2023
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={9}>
+              <Box
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
+                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
+                p={matches ? 1 : 3}
+              >
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Launch Koraplay for Small and Medium Businesses.
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Transition to full community governance of Koraplay.
+                  </li>
+                </ul>
+              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Box
+                height="100%"
+                fontWeight="700"
+                fontSize={matches ? "19px" : "24px"}
+                textAlign="center"
+                px={3}
+                py={3}
+                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
+                borderRight="4px solid #48007C"
+              >
+                {" "}
+                Q2 2023
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={9}>
+              <Box
+                fontWeight="400"
+                fontSize={matches ? "13px" : "18px"}
+                boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 20px 0px"
+                p={matches ? 1 : 3}
+              >
+                <ul>
+                  <li style={{ marginTop: "8px" }}>
+                    Koraplay native blockchain official launch.
+                  </li>
+                  <li style={{ marginTop: "8px" }}>
+                    Continuous development and transition to 100%
+                    decentralization.
+                  </li>
+                </ul>
+              </Box>
+              {/* <RoadMapAccordian />
+              <RoadMapAccordian />
+              <RoadMapAccordian /> */}
             </Grid>
           </Grid>
         </Container>

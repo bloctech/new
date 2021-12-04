@@ -4,15 +4,11 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Container,
-  Divider,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import MinimizeIcon from "@material-ui/icons/Minimize";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function RoadMapAccordian() {
   const theme = useTheme();

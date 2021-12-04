@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -6,11 +6,15 @@ import {
   useMediaQuery,
   IconButton,
   SwipeableDrawer,
-  Button,
   List,
   ListItem,
   ListItemText,
+  withStyles,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 // import soliditylogo from "../images/solidity audit.svg";
 import { Link as LinkR, NavLink } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -33,9 +37,9 @@ const useStyles = makeStyles({
     justifyContent: "center",
   },
   hover: {
-    fontWeight: "700",
+    fontWeight: "600",
     fontFamily: "Lato",
-    fontSize: "20px",
+    fontSize: "17px",
     color: "#000",
     textDecoration: "none",
     cursor: "pointer",
@@ -57,6 +61,17 @@ function Header(props) {
 
   const [openmenu, setOpenMenu] = React.useState(false);
   const anchorRef = React.useRef(null);
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  function handleClick(event) {
+    if (anchorEl !== event.currentTarget) {
+      setAnchorEl(event.currentTarget);
+    }
+  }
+  function handleCloses() {
+    setAnchorEl(null);
+  }
+
   const handleToggle = () => {
     setOpenMenu((prevOpen) => !prevOpen);
   };
@@ -187,7 +202,7 @@ function Header(props) {
             <Box>
               <LinkR to="/">
                 <Box
-                  fontSize="24px"
+                  fontSize="20px"
                   fontWeight="700"
                   style={{
                     background:
@@ -211,24 +226,46 @@ function Header(props) {
             flexBasis={matches1 ? "45px" : "58%"}
           >
             <Hidden mdDown>
-              <Box>
-                <LinkR to="/" className={classes.hover}>
-                  About
-                </LinkR>
+              <Box
+                aria-owns={anchorEl ? "simple-menu" : undefined}
+                aria-haspopup="true"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                <Box>
+                  <LinkR to="/" className={classes.hover}>
+                    {" "}
+                    Home
+                  </LinkR>
+                </Box>
               </Box>
 
+              <Menu
+                id="simple-menu"
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                MenuListProps={{ onMouseLeave: handleCloses }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
               <Box>
                 <LinkR to="build" className={classes.hover}>
                   Build
                 </LinkR>
               </Box>
-
               <Box>
-                <LinkR to="roadmap" className={classes.hover}>
-                  RoadMap
-                </LinkR>
+                <a href="#roadmap" className={classes.hover}>
+                  Roadmap
+                </a>
               </Box>
-
+              <Box>
+                <a href="#faq" className={classes.hover}>
+                  FAQ
+                </a>
+              </Box>
               <Box>
                 <LinkR to="community" className={classes.hover}>
                   Community
@@ -240,8 +277,8 @@ function Header(props) {
                 background:
                   "radial-gradient(133.33% 1564.91% at 14.8% 49.12%, #6300C6 0%, #AD00FF 100%)",
                 display: matches ? "none" : "block",
-                fontSize: "20px",
-                fontWeight: "700",
+                fontSize: "18px",
+                fontWeight: "600",
                 borderRadius: "36px",
                 width: "160px",
                 height: "45px",
